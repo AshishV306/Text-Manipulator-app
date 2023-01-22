@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Textform from './components/Textform';
 import React, {useState} from 'react'
 import Alert from './components/Alert';
+import { HashRouter } from "react-router-dom";
 import {
   BrowserRouter as Router,
   Routes,
@@ -40,7 +41,8 @@ function App() {
 
   return (
     <>
-     <Router>
+    <HashRouter>
+     {/* <Router basename="/Text-Manipulator-app"> */}
     <Navbar title="Text Manipulator" mode={mode} toggleMode={toggleMode} />
     <Alert alert={alert}/>
     
@@ -56,7 +58,8 @@ function App() {
     <About mode={mode}/>
       </div> */}
 
-</Router>
+{/* </Router> */}
+</HashRouter>
 
     </>
 
